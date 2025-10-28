@@ -1,25 +1,8 @@
-# Project Title
+# Proyecto Cudeca
 
-A brief description of what this project does and who it's for.
+Proyecto realizado por estudiantes de la Universidad de Málaga para la empresa Cudeca.
 
-## 🚀 Features
+## Visión del proyecto
 
-- Feature 1
-- Feature 2
-- Feature 3
+ 
 
-## 📦 Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/username/project-name.git
-
-# Navigate to the project directory
-cd project-name
-
-# Install dependencies
-npm install
-# or
-pip install -r requirements.txt
-# or
-yarn install
