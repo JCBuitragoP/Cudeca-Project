@@ -6,8 +6,8 @@ Pagina web Cudeca --> https://www.cudeca.org
 
 ## 📜  Organización del proyecto
 Para poder realizar este proyecto, hemos aplicado la metodología scrum, y empleado varias técnicas de la ingeniería del software para desarrollar la aplicación.
-### Requisitos Funcionales
-Hemos realizado
+### Requisitos Funcionales y No Funcionales
+Los RF nos sirven para poder saber que necesidades básicas necesita nuestro sistema/apliación para poder realizar lo mínimo necesario. Los RNF nos describen como se debe comportar dicho sistema.
 ### Diagrama casos de uso
 Para poder ver de manera general como interactuaría nuestro sistema, hemos realizado un diagrama donde se podrían ver las posibles interacciones de una manera general.
 ### Diagrama de clases
