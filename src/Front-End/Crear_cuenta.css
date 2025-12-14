@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #33f933 5%, #238101 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fondo */
+.board {
+    width: 100%;
+    max-width: 900px;
+    min-height: 100vh;
+    padding: 40px;
+    background: transparent;
+    position: relative;
+}
+
+/* Formulario */
+.formulario {
+    width: 100%;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.campo {
+    width: 48%;
+    /* Usamos el color de fondo verde oscuro que se ve en la imagen */
+    background: #6e9a60; /* Un verde militar/oscuro aproximado */
+    padding: 12px;
+    border-radius: 25px;
+    /* Agregamos una transición para el efecto hover */
+    transition: background 0.3s ease;
+}
+
+
+.campo label {
+    /* Mantenemos el blanco para que se lea sobre el fondo oscuro */
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 🟢 ESTILO DEL CAMPO DE ENTRADA (.campo input) 🟢 */
+.campo input {
+    width: 100%;
+    padding: 8px 12px;
+    /* Agregamos el borde grueso y blanco para el efecto visual */
+    border: 5px solid white;
+    border-radius: 15px;
+    /* Aseguramos que el fondo del input sea blanco */
+    background-color: white;
+    /* Elimina el contorno de enfoque predeterminado */
+    outline: none;
+}
+
+/* Opcional: Estilo hover para que el recuadro exterior cambie */
+.campo:hover {
+    background: #3c653c; /* Un tono un poco más oscuro al pasar el ratón */
+}
+
+/* Imagen */
+.imagen {
+    /* ❌ Eliminado: margin-top: 25px; */
+}
+
+.imagen img {
+    width: 360px;
+    border-radius: 5px;
+}
+
+/* Texto HAZTE SOCIO */
+.hazte-socio {
+    /* ❌ Eliminadas las propiedades de posición absoluta: */
+    /* position: absolute; */
+    /* right: 40px; */
+    /* bottom: 160px; */
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Flechas */
+.flecha {
+    position: absolute;
+    bottom: 30px;
+    width: 70px;
+    height: 70px;
+}
+
+
+.flecha img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+
+.izquierda {
+    left: 30px;
+}
+
+
+.derecha {
+    right: 30px;
+}
+
+
+.izquierda img {
+    transform: rotate(180deg);
+}
+
+
+```css
+.flecha {
+    position: absolute;
+    bottom: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #2ca02c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flecha img {
+    width: 40px;
+}
+
+
+.izquierda img {
+    transform: rotate(180deg);
+}
+
+
+.flecha:hover {
+    background: #249124;
+}
+.seccion-lateral {
+    display: flex;
+    flex-direction: row;        /* imagen izquierda, texto derecha */
+    align-items: center;        /* centrado vertical entre ambos */
+    justify-content: center;
+    gap: 30px;                  /* espacio entre imagen y texto */
+    margin-top: 40px;
+}
+
+}
+
