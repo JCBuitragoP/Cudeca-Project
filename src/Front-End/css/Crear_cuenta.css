@@ -95,13 +95,13 @@ body {
 .flecha {
     position: absolute;
     bottom: 30px;
-    width: 70px;
+    width: 85px;
     height: 70px;
 }
 
 
 .flecha img {
-    width: 70px;
+    width: 85px;
     height: 70px;
     cursor: pointer;
 }
@@ -126,7 +126,7 @@ body {
 .flecha {
     position: absolute;
     bottom: 30px;
-    width: 70px;
+    width: 85px;
     height: 70px;
     border-radius: 50%;
     background: #2ca02c;
@@ -137,7 +137,7 @@ body {
 
 
 .flecha img {
-    width: 40px;
+    width: 75px;
 }
 
 
