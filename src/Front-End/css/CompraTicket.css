@@ -1,0 +1,170 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'sourcesanspro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(https://design.penpot.app/fonts/sourcesanspro-black.woff) format('woff');
+}
+
+
+/* FULL SCREEN BASE */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* GRADIENT BACKGROUND */
+.gradient-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(51, 249, 51, 1) 5%,
+    rgba(35, 129, 1, 1) 30%
+  );
+}
+
+/* MAIN FRAME */
+.frame.board {
+  width: 100%;
+  max-width: 580px;
+  min-height: 700px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.header-rect {
+  height: 55px;
+  background-color: #2e8b00;
+  border-radius: 30px;
+}
+
+.header-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* WHITE CONTENT BOX */
+.content {
+  background: white;
+  width: 100%;
+  padding: 30px;
+  padding-bottom: 80px; 
+  position: relative;
+}
+
+/* TICKET ROWS */
+.ticket-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter button {
+  width: 32px;
+  height: 32px;
+  background-color: #2e8b00;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    text-decoration 0.1s ease;
+}
+
+.counter button:active {
+  background: rgba(51, 190, 51, 1);
+}
+
+.counter span {
+  width: 20px;
+  text-align: center;
+}
+
+/* TOTAL */
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* BUTTON */
+.btn-primary {
+  background: linear-gradient(
+    to bottom,
+    rgba(51, 190, 51, 1),
+    rgba(35, 129, 1, 1)
+  );
+  color: white;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    text-decoration 0.1s ease;
+}
+
+.btn-primary:hover {
+  text-decoration: underline;
+}
+
+.btn-primary:active {
+  background: linear-gradient(
+    to bottom,
+    rgba(35, 129, 1, 1),
+    rgba(51, 190, 51, 1)
+  );
+}
+
+/* BACK ARROW */
+.flechita {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  width: 42px;
+  height: 42px;
+
+  background: url("../flechita-reves.png") no-repeat center;
+  background-size: contain;
+}
