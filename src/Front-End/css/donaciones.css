@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(#3cff00, #0f6b00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pagina {
+    width: 420px;
+    background: #1b7d00;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative; /* necesario para que .volver se posicione */
+}
+
+.titulo {
+    background: #2f8f00;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.fila .cantidad {
+    font-size: 22px;
+    min-width: 140px;
+}
+
+.fila span {
+    font-size: 22px;
+}
+
+.personalizada input {
+    width: 70px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.btn-donar {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #7ca36a;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-donar:hover {
+    opacity: 0.9;
+}
+
+
+/* Flecha volver */
+
+.volver {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    background: #2ca02c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background 0.3s ease;
+}
+
+.volver:hover {
+    background: #249124;
+}
+
+.volver img {
+    width: 42px;
+    height: auto;
+    display: block;
+}
+
+.volver {
+    background: white;
+}
+
+.volver img {
+    filter: none;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .fila {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+}
+

@@ -1,0 +1,138 @@
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #33f933 5%, #238101 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.pagina {
+    width: 100%;
+    max-width: 900px;
+    min-height: 100vh;
+    padding: 40px;
+    position: relative;
+}
+
+/* Título */
+.titulo {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Formulario */
+.formulario {
+    width: 100%;
+}
+
+/* Fila de dos campos */
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+/* === CONTENEDOR VERDE DE CADA CAMPO === */
+.fila label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    background: #7aa36f; /* verde suave como la imagen */
+    padding: 14px 18px 16px;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+/* INPUT BLANCO INTERIOR */
+.fila input {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    background: white;
+}
+
+/* Hover suave */
+.fila label:hover {
+    background: #688f5d;
+}
+
+/* Botón */
+.acciones {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pagar {
+    background: white;
+    color: #238101;
+    border: none;
+    padding: 16px 45px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.pagar:hover {
+    background: #e5ffe5;
+    transform: scale(1.05);
+}
+
+/* === FLECHITA CON IMAGEN === */
+.volver {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    background: #2ca02c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.volver:hover {
+    background: #249124;
+}
+
+.volver img {
+    width: 40px;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fila {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+}
+
